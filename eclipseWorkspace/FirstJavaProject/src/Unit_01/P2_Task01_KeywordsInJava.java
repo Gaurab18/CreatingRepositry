@@ -12,7 +12,7 @@ public class P2_Task01_KeywordsInJava {
 		P2_Task01_KeywordsInJava int=new P2_Task01_KeywordsInJava(); 
 		We can't use int for object creation bcz int is a reserved keyword in java 
 		*/
-		P2_Task01_KeywordsInJava obj=new P2_Task01_KeywordsInJava();
+		P2_Task01_KeywordsInJava obj=new P2_Task01_KeywordsInJava();  // object creation
 		obj.msg();
 		
 		
