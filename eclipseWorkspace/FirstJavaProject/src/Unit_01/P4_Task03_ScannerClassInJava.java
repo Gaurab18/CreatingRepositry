@@ -1,13 +1,13 @@
-package unit1;
+package Unit_01;
 
 import java.util.Scanner;
 
-public class p4_task7_scannerClass {
+public class P4_Task03_ScannerClassInJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		p4_task7_scannerClass obj = new p4_task7_scannerClass();
+		P4_Task03_ScannerClassInJava obj = new P4_Task03_ScannerClassInJava();
 		obj.scannerEx();
 	}
 	
