@@ -1,5 +1,6 @@
 package Unit_01;
 
+import java.util.Scanner;
 
 /* Problem Statement: P7_SwitchStatements: 
    Create a switch statement [Manual], In Which:
@@ -10,9 +11,10 @@ package Unit_01;
  * */
 
 public class P7_SwitchStatement {
+	
 
 	public static void main(String[] args) {
-		
+				
 		SwitchStatements obj = new SwitchStatements();
 		obj.switchStatements();
 
@@ -23,7 +25,23 @@ public class P7_SwitchStatement {
 class SwitchStatements {
 	void switchStatements() {
 		
-		// Write Logic here!
-        		
+		Scanner s = new Scanner(System.in);
+		System.out.println("enter your choice");
+		int num  = s.nextInt();
+		switch(num) {
+		case 1:
+			System.out.println("current year 2022");
+			break;
+		case 2:
+			System.out.println("current month 4");
+            break;		
+		case 3: 
+			System.out.println("current day  thursday");
+		    break;	
+		default:
+				System.out.println("wrong choice");
+				
+		}
+		
 	}
-}
+}  
