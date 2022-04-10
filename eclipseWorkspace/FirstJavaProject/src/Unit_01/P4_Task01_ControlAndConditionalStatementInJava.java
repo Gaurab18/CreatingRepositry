@@ -58,7 +58,7 @@ class Statements{
 	/*
 	 * While (condition)
 	 */
-	
+	while
 	int i=0;
 	System.out.println(i);
 	i=i+2;
