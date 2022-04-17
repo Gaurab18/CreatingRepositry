@@ -5,7 +5,7 @@ public class P13_Assignment_Questions_Unit_02 {
         Assignment_Questions_Unit_02 obj = new Assignment_Questions_Unit_02();
         obj.abstractClassCall();
         obj.overloadingAndOverriding();
-        obj.accessProtectionInJava();
+        obj.accessProtectionInJava();//..
         obj.InterfaceImplementation();
     }
 }
