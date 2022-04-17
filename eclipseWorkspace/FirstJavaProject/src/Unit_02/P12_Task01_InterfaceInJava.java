@@ -8,7 +8,7 @@ package Unit_02;
  * multiple interface can be implemented at the same time in one class?
  * 
  * can an interface extends another interface?
- * 
+ *..
  */
 
 // interface (100% Abstract Class)
