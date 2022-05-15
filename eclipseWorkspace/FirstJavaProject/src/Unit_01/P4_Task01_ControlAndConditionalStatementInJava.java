@@ -3,94 +3,65 @@ package Unit_01;
 public class P4_Task01_ControlAndConditionalStatementInJava {
 
 	public static void main(String[] args) {
-		Statements obj = new Statements();
-
+		Statements obj=new Statements();
 		obj.DecisionMakingStatements();
-		obj.LoopStatememts();
+		obj.LoopStatements();
 		obj.JumpStatements();
 	}
 
 }
-
 class Statements{
-	
 	void DecisionMakingStatements() {
+		int x=1,y=2;
+		if(x+y<1)
+			System.out.println("x+y is less than 1");
+		else
+			System.out.println("x+y is greater than 2");
 		
-		int x=10;
-		int y=12;
-		if(x+y <10) {
-			System.out.println("x+y is less than   10");
-		}
-		else {
-			System.out.println("x+y is greater than 20");
-		}
-			int num =2;
-			// can we use char instead of int as num??
-			
-		switch(num) { //switch (expression)
+		int num=20;
+		//can we use char instead of int as num?
+		switch(num) {
 		case 0:
 			System.out.println("number is 0");
 			break;
-		case 1:
-			System.out.println("number is 1");
+		case 10:
+			System.out.println("number is 10");
 			break;
 		default:
 			System.out.println(num);
 		}
 	}
-	  void LoopStatements() {
-		  /*
-		   * for(initilization , condition ,increment/decrement)
-		   */
-		  //for loop
-		  int sum =0;
-		  for(int j=1;j<=10;j++)
-			  sum = sum + j;
-		System.out.println("The sum of first 10 natural number is " + sum);
-	  }
-
-	//For each
-	String[] names = {"Java", "C", "C++", "Python"};
-	System.out.println("Printing the content of the array names:\n");
-	for(String name : names) {
-		System.out.println(name);
-    }
-	/*
-	 * While (condition)
-	 */
-	while
-	int i=0;
-	System.out.println(i);
-	i=i+2;
-    }
-  /*
-   * do -while do
-   */
-  i=0;
-  System.out.println("Printing the list of 10 even numbers \n");
-  do {
-    System.out.println(i);
-    i=i+2;
-     }while(i <= 10);
-  }
-  
-  void JumpStatements() {
-	  // break
-	  for(int i=-0; i<= 10; i++) {
-		  System.out.println(i);
-		  if(i == 6) {
-			  break;
-		  }
-		  System.out.println(i);
-	  }
-	  
-	  //Continue
-	  for(int i=0; i<=10; i++) {
-		  
-		  if(i == 6) {
-			  continue;
-		  }
-		  System.out.println(i);
-	  }
-  }
-  }
+	void LoopStatements() {
+		// For Loop
+		int sum=0;
+		for(int i=0;i<=10;i++)
+			sum+=i;
+		System.out.println("The sum of first 10 natural number is "+sum);
+		
+		// For each
+		String[] names= {"C","C++","Python","Java"};
+		System.out.println("Printing the content of array names :");
+		for(String name:names) {
+			System.out.println(name);
+		}
+		//do while 
+		int i=0;
+		System.out.println("Printing the list of first 10 even numbers");
+		do {
+			System.out.println(i);
+			i+=2;
+		}while(i<=10);
+	}
+	void JumpStatements() {
+		//Break
+		for(int i=0;i<=10;i++) {
+			System.out.println(i);
+			if(i==5)break;
+		}
+		//Continue
+		for(int i=0;i<=10;i++) {
+			if(i==5)continue;
+			System.out.println(i);
+		}
+	}
+}
